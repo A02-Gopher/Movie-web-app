@@ -259,91 +259,58 @@ header {
 /* Footer*/
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
     background-color: #333333;
-    color: #e60000;
-    height: 45px;
-    line-height: 30px;
-    padding-bottom: 10px;
 }
 
 .container-footer {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    height: 60px;
 }
 
-.footer-logo {
-    float: left;
-    font-size: 20px;
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.footer-logo img {
-    width: 35px;
-
+span  {
+    color: white;
 }
 
-.footer-logo li {
-    float: left;
-    padding: 0px 2px;
+span a {
+    margin-left: 3px;
+    text-decoration: none;
+    color: red;
+    letter-spacing: 1px;
 }
 
-.judul-footer {
-    padding-bottom: 25px;
+.content-right {
+    display: flex;
+    color: white;
 }
 
-.footer-list {
-    float: right;
-    padding-top: 4px
+.content-right p {
+    margin: 0 10px;
 }
 
-.ikutikami {
-    padding-top: 0px;
-    font-size: 15px;
+.content-right p:first-child {
+    color: red;
 }
 
-.footer-list li {
-    float: left;
-    padding-left: 16px;
-}
-
-.fa-facebook,
-.fa-twitter,
-.fa-instagram {
-    color: aliceblue;
-}
-
-/* Untuk smartphone */
-@media all and (max-width: 670px) {
-
-    footer,
-    .container-footer {
-        width: 100%;
-        text-align: center;
-        height: 70px;
+@media all and (max-width: 1000px) { 
+    span {
+        margin-left: 10px;
     }
-
-    .footer-logo {
-        width: 100%;
-        box-sizing: border-box;
-        line-height: 20px;
-        padding-left: 70px;
-        padding-bottom: 10px;
-    }
-
-
-    .footer-list {
-        float: none;
-        text-align: center;
-        width: 100%;
-        padding-left: 40px;
-    }
-
-    .footer-list li {
-        float: left;
-        text-align: center;
-        
+    p {
+        font-size: 12px;
     }
 }
-
-
