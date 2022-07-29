@@ -37,7 +37,7 @@ header {
   float: left;
   font-size: 30px;
   font-weight: bold;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .header-logo img {
@@ -271,8 +271,6 @@ header {
 }
 
 /* ---------------------------------------------- */
-
-
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 1460px) {
@@ -374,4 +372,35 @@ header {
     font-size: 10px;
   }
  
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+footer {
+  padding-left: 20px;
+  width:auto;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  height: 150px;
+  width: 100%;
+}
+
+.contact-footer {
+  color: WHite;
+
+  display:block;
+}
+
+.contact-footer a {
+  margin: 10px;
+  text-decoration: none;
+  color:white;
+  display: inline-block;
+}
+
+.section-footer a {
+  color:white;
+  text-decoration: none;
 }
