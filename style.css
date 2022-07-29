@@ -162,6 +162,56 @@ header {
   font-size: 16px;
 }
 
+
+/* ---------------------------------------------- */
+/* ---------------- Massage Wraper------------- */
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  width: 500px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.color {
+ background-color:#212121;
+ margin: 30px;
+}
+
+.heading h2 {
+  color:#eee
+}
+
+.heading h3 {
+  color: #eee;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #D70000;
+  cursor: pointer;
+  box-shadow: 0 5px #8B0000;
+  margin-top: 10px;
+  color: #eee;
+}
+
+/* Tambahkan CSS untuk message ketika diklik */
+.message:active{
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+  color:#eee;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+
 @media screen and (max-width: 1460px) {
   .container-main h2  {
     font-size: 16px;
@@ -182,6 +232,8 @@ header {
   .list-film p {
     font-size: 13px;
   }
+
+  
 }
 
 @media screen and (max-width: 825px) { 
@@ -221,6 +273,8 @@ header {
   .list-film p {
     font-size: 16px;
   }
+
+  
 }
 
 @media screen and (max-width: 450px) { 
@@ -246,6 +300,15 @@ header {
   .list-film p {
     font-size: 11px;
   }
-}
 
-/* ---------------------------------------------- */
+  .message-wrapper {
+    font-size: 10px;
+    width: 275px;
+  }
+
+  .message{
+    width: 180px;
+    font-size: 10px;
+  }
+ 
+}
