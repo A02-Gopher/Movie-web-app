@@ -1,165 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
-  margin : 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;;
-  background-color: #181818
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    ;
+    background-color: #181818
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .container {
-  width: 1440px;
+    width: 1440px;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  width: 100%;
-  background-color: #333333;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    width: 100%;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-.header-left{
-  float:left;
-  width: 50%;
+.header-left {
+    float: left;
+    width: 50%;
 }
 
-.header-logo{
-  display: flex;
-  color: Red;
-  float: left;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px 0;
+.header-logo {
+    display: flex;
+    color: Red;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 .header-logo img {
-  margin-left: -15px;
-  margin-right: -10px;
+    margin-left: -15px;
+    margin-right: -10px;
 }
 
-.header-list{
-  width: 100%;
-  margin: 5px;
-  margin-top: 20px;
+.header-list {
+    width: 100%;
+    margin: 5px;
+    margin-top: 20px;
 }
 
 .header-list li {
-  color: white;
-  font-size: 15px;
-  padding: 0px 20px;
-  float: left;
+    color: white;
+    font-size: 15px;
+    padding: 0px 20px;
+    float: left;
 
 }
 
-.header-right{
-  float: right;
-  width: 50%;
+.header-right {
+    float: right;
+    width: 50%;
 }
 
-.search{
-  margin: 5px 0;
-  margin-top: 10px;
-  padding: 10px 5px;
-  float: right;
-  width:auto
+.search {
+    margin: 5px 0;
+    margin-top: 10px;
+    padding: 10px 5px;
+    float: right;
+    width: auto
 }
 
-.search input{
-  background-color: transparent;
-  width: auto;
+.search input {
+    background-color: transparent;
+    width: auto;
 }
-.search input::placeholder{
-  color: white;
+
+.search input::placeholder {
+    color: white;
 }
 
 .search input[type=text] {
-  border: none;        /* Remove default borders */
-  padding: 4px 8px;
-  border-radius: 12px; /* Sadly outline does not round! therefore...*/
-  
-}
-.search input[type=text]:focus{
-  outline: none;      /* Remove default outline and use border or box-shadow */
-  box-shadow: 0 0 0 2px white; /* Full freedom. (works also with border-radius) */
-  background-color: white;
+    border: none;
+    /* Remove default borders */
+    padding: 4px 8px;
+    border-radius: 12px;
+    /* Sadly outline does not round! therefore...*/
+
 }
 
-.notification{
-  float: right;
-  margin: 10px 30px;
-  padding: 10px 5px;
-  width: auto;
+.search input[type=text]:focus {
+    outline: none;
+    /* Remove default outline and use border or box-shadow */
+    box-shadow: 0 0 0 2px white;
+    /* Full freedom. (works also with border-radius) */
+    background-color: white;
+}
+
+.notification {
+    float: right;
+    margin: 10px 30px;
+    padding: 10px 5px;
+    width: auto;
 }
 
 
 .login {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
 }
 
 .login:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .login a {
-  line-height: 65px;
-  padding: 0 5px;
-  color: white;
-  display: block;
+    line-height: 65px;
+    padding: 0 5px;
+    color: white;
+    display: block;
 }
 
 /* ---------------------------------------------- */
 /* ---------------- Main-view style ------------- */
 
 .container-main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 100%;
-  margin-top: 150px;
-  color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    margin-top: 150px;
+    color: white;
 }
 
 .container-main:nth-child(2) {
-  margin-top: 50px;
-  margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .container-main h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .section-film {
-  display: flex;
-  justify-content: space-between;
-  width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
 }
 
 .list-film {
-  width: 200px;
-  cursor: pointer;
+    width: 200px;
+    cursor: pointer;
 }
 
 .list-film img {
-  width: 200px;
+    width: 200px;
 }
 
 .list-film p {
-  margin: 0;
-  text-align: center;
-  font-size: 16px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
 }
 
 
@@ -167,7 +174,6 @@ header {
 /* ---------------- Massage Wraper------------- */
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
   width: 500px;
@@ -182,10 +188,12 @@ header {
 }
 
 .heading h2 {
+  font-size: 20px;
   color:#eee
 }
 
-.heading h3 {
+.heading p {
+    font-size: 16px;
   color: #eee;
 }
 
@@ -213,61 +221,158 @@ header {
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 1460px) {
-  .container-main h2  {
-    font-size: 16px;
-  }
+    .container-main h2 {
+        font-size: 16px;
+    }
 
-  .section-film {
-   width: 1100px;
-  }
+    .section-film {
+        width: 1100px;
+    }
 
-  .list-film {
-    width: 160px;
-  }
+    .list-film {
+        width: 160px;
+    }
 
-  .list-film img {
-    width: 160px;
-  }
+    .list-film img {
+        width: 160px;
+    }
 
+<<<<<<< HEAD
+    .list-film p {
+        font-size: 13px;
+    }
+=======
   .list-film p {
     font-size: 13px;
   }
 
   
+>>>>>>> 0fa9208247b32e8ae6b1226b98f1d43444e55973
 }
 
-@media screen and (max-width: 825px) { 
-  .container-main h2  {
-    font-size: 20px;
-    margin-left: 15px;
-  }
+@media screen and (max-width: 825px) {
+    .container-main h2 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
 
-  .section-film {
+    .section-film {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .list-film {
+        width: 30%;
+        margin-right: 3.2%;
+        margin-bottom: 20px;
+    }
+
+    .list-film:nth-child(1) {
+        margin-left: 15px;
+    }
+
+    .list-film:nth-child(4) {
+        margin-left: 15px;
+    }
+
+    .list-film:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .list-film img {
+        width: 100%;
+    }
+
+    .list-film p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container-main h2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .list-film {
+        width: 29%;
+        margin-right: 4%;
+    }
+
+    .list-film:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    .list-film:nth-child(4) {
+        margin-left: 10px;
+    }
+
+    .list-film p {
+        font-size: 11px;
+    }
+}
+
+/* ---------------------------------------------- */
+/* Footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+    height: 60px;
+    background-color: #333333;
+}
 
-  .list-film {
-    width: 30%;
-    margin-right: 3.2%;
-    margin-bottom: 20px;
-  }
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    height: 60px;
+}
 
-  .list-film:nth-child(1) {
-    margin-left: 15px;
-  }
-
-  .list-film:nth-child(4) {
-    margin-left: 15px;
-  }
-
-  .list-film:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .list-film img {
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+
+span  {
+    color: white;
+}
+
+span a {
+    margin-left: 3px;
+    text-decoration: none;
+    color: red;
+    letter-spacing: 1px;
+}
+
+.content-right {
+    display: flex;
+    color: white;
+}
+
+.content-right p {
+    margin: 0 10px;
+}
+
+.content-right p:first-child {
+    color: red;
+}
+
+@media all and (max-width: 1000px) { 
+    span {
+        margin-left: 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+    
   }
 
   .list-film p {
